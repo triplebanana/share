@@ -15,7 +15,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    { provide: 'Location', useValue: window.location }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
